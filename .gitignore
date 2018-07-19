@@ -1,0 +1,10 @@
+*.iml
+/.idea
+_build
+cover
+deps
+doc
+erl_crash.dump
+*.ez
+tmp/*
+!tmp/.keep
