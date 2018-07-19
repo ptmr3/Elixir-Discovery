@@ -8,7 +8,7 @@ Setup
 -----
 Get Dependencies
 
-`mix dep`
+`mix deps.get`
 
 Run
 -----
