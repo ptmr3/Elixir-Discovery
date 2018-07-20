@@ -4,6 +4,7 @@ defmodule ElixirDiscovery.IndexHandler do
     body = """
       api/
       api/characters/[:string]
+      api/benchmark/[:loops]
       api/words/[:string]
     """
     cowboy_request = :cowboy_req.reply(404, headers, body, request)

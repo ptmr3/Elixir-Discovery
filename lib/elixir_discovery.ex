@@ -6,6 +6,7 @@ defmodule ElixirDiscovery do
     port = Application.get_env(:elixir_discovery, :port)
     path_list = [
       {"/api/characters/[:characters]", ElixirDiscovery.CharacterHandler, []},
+      {"/api/benchmark/[:loops]", ElixirDiscovery.BenchmarkHandler, []},
       {"/api/words/[:words]", ElixirDiscovery.WordHandler, []},
       {"/api/[...]", ElixirDiscovery.IndexHandler, []},
     ]

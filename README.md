@@ -8,26 +8,30 @@ Setup
 -----
 Get Dependencies
 
-    `mix deps.get`
+    mix deps.get
 
 Run
 -----
 Compile and run the application
 
-    `mix run --no-halt`
+    mix run --no-halt
 
 Interact
 -----
 View available api calls
 
-    `http://localhost:8001/api/`
+    http://localhost:8001/api/
 
 
 Get the character count or whatever is sent into the api
 
-    `http://localhost:8001/api/characters/[:string]`
+    http://localhost:8001/api/characters/[:string]
 
+Enter a number of loops to process. Once complete, 
+the endpoint will respond with the number of milliseconds it took.
 
+    http://localhost:8001/api/benchmark/[:loops]
+    
 Get the word count of whatever is sent into the api
 
-    `http://localhost:8001/api/words/[:string]`
+    http://localhost:8001/api/words/[:string]
